@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>New task</h1>
+
+  <div>
+    <%= form_for(@task, :html => {:class => "form-group"}) do |f| %>
+      <%= f.label :title%>
+      <%= f.text_field :title, :class => "form-control"%>
+
+      <%= f.label :details %>
+      <%= f.text_area :details, :class => "form-control" %>
+      <%= f.submit class: 'btn btn-primary' %>
+      <% end %>
+  </div>
+</div>
+
+

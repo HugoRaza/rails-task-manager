@@ -13,3 +13,42 @@
  *= require_tree .
  *= require_self
  */
+
+
+.task-icon {
+  width: 10px;
+}
+
+.task-description {
+  background-color: #F0F4F0;
+  width: 600px;
+  height: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  padding: 10px 5px;
+}
+
+.task-completed {
+  width: 600px;
+  height: 50px;
+  margin: 10px;
+  border-bottom: solid 1px #F0F4F0;
+}
+
+#edit-task {
+  width: 100px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgba(251, 202, 147, 0.7);
+  margin: 5px 0;
+  color: white;
+
+}
+
+#text-area {
+  width: 100%;
+}
+
+#task-list {
+  border: none;
+}

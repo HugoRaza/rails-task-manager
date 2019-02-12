@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>My tasks</h1>
+
+
+  <% @tasks.each do |task| %>
+
+    <ul class="list-group">
+
+      <% if task.completed? %>
+      <li id="task-list" class="list-group-item"> <i class="far fa-check-square"> </i> <%= link_to task.title, task_path(task) %> <%= link_to '', task_path(task), method: :delete, :class => "far fa-trash-alt", data: { confirm: "Are you sure?" } %>
+      </li>
+      <% else %>
+      <li id="task-list" class="list-group-item"> <i class="far fa-square"></i> </i> <%= link_to task.title, task_path(task) %> <%= link_to '', task_path(task), method: :delete, :class => "far fa-trash-alt", data: { confirm: "Are you sure?" } %>
+       </li>
+      <% end %>
+    </ul>
+
+  <% end %>
+  <br>
+  <%= link_to '+ Add a new task', new_task_path %>
+</div>
+
